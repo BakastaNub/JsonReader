@@ -38,7 +38,7 @@ export default function Home() {
     formData.append('description', ''); // Enviamos descripción vacía inicialmente
 
     try {
-      const response = await fetch('66.241.124.7/process-json', {
+      const response = await fetch('https://backendjson.fly.dev/process-json', {
         method: 'POST',
         body: formData,
       });
