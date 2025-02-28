@@ -38,13 +38,10 @@ export default function Home() {
     formData.append('description', ''); // Enviamos descripción vacía inicialmente
 
     try {
-      const response = await fetch(
-        'https://backend-patient-flower-5174.fly.dev/process-json',
-        {
-          method: 'POST',
-          body: formData,
-        }
-      );
+      const response = await fetch('66.241.124.7/process-json', {
+        method: 'POST',
+        body: formData,
+      });
 
       if (!response.ok) {
         throw new Error('Error al procesar el archivo JSON.');
